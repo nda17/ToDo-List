@@ -172,7 +172,7 @@ async function createToDo(todo) {
 async function toggleToDoStatus(todoId, status) {
     try {
         const response = await fetch(
-            `https://jsonplaceholder.typicode.com/todosa/${todoId}`, ///////
+            `https://jsonplaceholder.typicode.com/todos/${todoId}`, ///////
             {
                 method: 'PATCH',
                 body: JSON.stringify({ completed: status }),
