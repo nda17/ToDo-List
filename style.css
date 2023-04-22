@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1.2rem;
+}
+header {
+    background-color: mediumorchid;
+    color: white;
+    height: 100px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+form {
+    width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input, form select {
+    padding: 0.5rem 1rem;
+}
+input[type="text"] {
+    width: 100%;
+}
+form > button {
+    cursor: pointer;
+    background-color: mediumorchid;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+}
+form > button:hover {
+    background-color: violet;
+}
+
+ul {
+    list-style: none;
+    width: 500px;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.close {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-left: auto;
+}
+.close:hover {
+    color:tomato
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal__content {
+display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    min-height: 20%;
+}
+
+.modal__close-btn {
+    color: #aaa;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.modal__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    height: 100%;
+}
+
+.show-modal {
+    display: flex;
+    align-items: center;
+}
+
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
