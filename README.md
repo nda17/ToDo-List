@@ -1,17 +1,18 @@
-# TODO List
+# «TODO List App»
 
-## Требования к проекту (бизнес-логика):
-1. Получать данные с сервера, отрисовывать их на странице.
-2. Через форму создавать новые задачи, с отправкой запроса на сервер.
-   Выбор пользователя из списка доступных.
-3. Изменять статус завершенности по чекбоксу.
-4. Удалять задачи.
+## Application functionality:
+  - Requesting and receiving data from the server when loading the application (task execution status / username / user task).
+  - Downloading the received information in the format: execution status / user name / task text.
+  - Ability to add and remove task completion status (by toggling a checkbox).
+  - Ability to add new tasks and delete current tasks.
+  - When an error occurs, a modal window appears with a message to the user.
 
-## UI:
-1. Шапка с названием.
-2. Форма: текстовое поле, select для выбора пользователей и кнопка.
-3. Список всех пользователей.
-4. Задача:
-   - Текст
-   - Чекбокс
-   - Крестик для удаление
+## UI: 
+  - Header with title.
+  - Dropdown list with user choice.
+  - Button for adding a new task.
+  - Blocks with saved current tasks.
+  - Website footer.
+
+## Deployed:
+[Watch here](https://nda17.github.io/TODO-List-app/)
