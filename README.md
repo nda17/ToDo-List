@@ -15,8 +15,9 @@
   - Website footer.
 
 ## Used:
-  -HTML / JavaScript.
-  -Tailwind.
+- HTML / JavaScript.
+- Tailwind.
+
 
 ## Deployed:
 [Watch here](https://nda17.github.io/TODO-List-app/)
