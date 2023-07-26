@@ -14,5 +14,9 @@
   - Blocks with saved current tasks.
   - Website footer.
 
+## Used:
+  -HTML / JavaScript.
+  -Tailwind.
+
 ## Deployed:
 [Watch here](https://nda17.github.io/TODO-List-app/)
