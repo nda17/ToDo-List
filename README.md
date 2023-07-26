@@ -20,4 +20,6 @@
 
 
 ## Deployed:
-[Watch here](https://nda17.github.io/TODO-List-app/)
+[Watch here](https://nda17.github.io/ToDo-List-app/)
+
+
