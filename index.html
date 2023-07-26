@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ToDo List App</title>
+</head>
+
+<body>
+	<header class='h-20 bg-purple-500 max-w-lg mx-auto'>
+		<h1 class='text-2xl font-bold text-center text-white py-6'>
+			ToDo List App
+		</h1>
+	</header>
+    <main class='max-w-lg mx-auto p-4 border-purple-500 border-l-4 border-r-4 border-solid relative' style='min-height: calc(100vh - 80px - 80px)'>
+        <form autocomplete="off" class="flex flex-col gap-[1rem]">
+            <label>
+                <input class='w-full h-[35.2px] border-2 border-solid border-purple-500 p-1 rounded-[6px]' id="new-todo" name="todo" type="text" placeholder="New todo" />
+            </label>
+            <select class="w-full h-[35.2px] border-2 border-solid border-purple-500 p-1 rounded-[6px]" id="user-todo" name="user">
+                <option disabled selected>select user</option>
+            </select>
+            <button class='w-32 bg-emerald-500 py-3 px-2 mx-auto hover:bg-emerald-400 active:bg-emerald-700 rounded-[6px]'>Add Todo</button>
+        </form>
+        <ul id="todo-list"></ul>
+        <div class="modal hidden w-full h-full bg-[#000000] opacity-90 absolute top-0 right-0 bottom-0 left-0 flex items-center">
+            <div class="modal__content sticky flex flex-col bg-[#fefefe] mx-auto mt-[15%] mb-[15%] p-[20px] border-[#888] w-[80%] min-h-[20%]">
+                <span class="modal__close-btn text-[#aaa] flex justify-end text-[40px] font-black hover:text-[#000000] focus:text-[#000000] hover:decoration-0 focus:decoration-0 hover:cursor-pointer focus:decoration-0">&times;</span> 
+                <p class="modal__text flex justify-center text-center items-center text-[22px] h-full">Some text in the Modal..</p>
+            </div>
+        </div>
+    </main>
+    <footer class='h-20 bg-purple-500 max-w-lg mx-auto'></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
